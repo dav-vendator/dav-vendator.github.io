@@ -28,9 +28,10 @@ url: "https://dav-vendator.github.io" # the base hostname & protocol for your si
 github_username:  dav-vendator
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
