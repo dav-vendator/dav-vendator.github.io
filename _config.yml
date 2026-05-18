@@ -28,7 +28,7 @@ url: "https://dav-vendator.github.io" # the base hostname & protocol for your si
 github_username:  dav-vendator
 
 # Build settings
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 plugins:
   - jekyll-feed
   - jekyll-include-cache

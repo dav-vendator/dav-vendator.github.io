@@ -1,8 +1,9 @@
 source "https://rubygems.org"
 #Theme
-gem "minimal-mistakes-jekyll"
+gem "jekyll-include-cache", group: :jekyll_plugins
+
 #Github Specific configuration
-gem "github-pages","~> 232", group: :jekyll_plugins
+gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
