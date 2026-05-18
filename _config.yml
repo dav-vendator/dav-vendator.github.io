@@ -1,54 +1,88 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+title: "Davinder Singh"
+subtitle: "Quantum Information | Quantum Machine Learning | Temporal Learning"
+name: "Davinder Singh"
+description: "Personal academic website and portfolio of Davinder Singh, PhD Research Scholar at IIT Bombay."
+url: "https://dav-vendator.github.io"
+baseurl: ""
 
-title: Dav Vendator's blog
-#email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
- A blog on my projects and learning experiences.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dav-vendator.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-github_username:  dav-vendator
+repository: "dav-vendator/dav-vendator.github.io"
 
-# Build settings
+# Theme
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+minimal_mistakes_skin: "default"
+
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-remote-theme
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Author profile
+author:
+  name: "Davinder Singh"
+  avatar: "/assets/images/profile.jpg"
+  bio: "PhD Research Scholar at IIT Bombay working on Quantum Information, Quantum Machine Learning, and coherent temporal memory."
+  location: "Mumbai, India"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dav-vendator"
+    - label: "Medium"
+      icon: "fab fa-fw fa-medium"
+      url: "https://medium.com/@dvendator"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "#"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+      author_profile: true
+
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Feed
+feed:
+  path: feed.xml
+
+# Search
+search: true
+
+# Include files/folders
+include:
+  - _pages
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - .sass-cache
+  - .jekyll-cache
