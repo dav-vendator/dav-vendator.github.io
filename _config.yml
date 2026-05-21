@@ -1,6 +1,6 @@
 # Site settings
 title: "Davinder Singh"
-subtitle: "Quantum Information | Quantum Machine Learning | Temporal Learning"
+subtitle: "PhD @ IIT Bombay | Quantum Information & QML"
 name: "Davinder Singh"
 description: "Personal academic website and portfolio of Davinder Singh, PhD Research Scholar at IIT Bombay."
 url: "https://dav-vendator.github.io"
@@ -10,7 +10,7 @@ repository: "dav-vendator/dav-vendator.github.io"
 
 # Theme
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
-minimal_mistakes_skin: "default"
+minimal_mistakes_skin: "neon"
 
 # Plugins
 plugins:
@@ -33,27 +33,21 @@ author:
       url: "https://medium.com/@dvendator"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "#"
+      url: "https://www.linkedin.com/in/dvendator"
 
 # Defaults
 defaults:
   - scope:
       path: ""
-      type: "pages"
+      type: pages
     values:
       layout: single
       author_profile: true
-
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
+      show_date: false
+      read_time: false
       comments: false
-      share: true
-      related: true
+      share: false
+      related: false
 
 # Collections
 collections:
