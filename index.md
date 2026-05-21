@@ -3,7 +3,7 @@ layout: splash
 title: "Davinder Singh"
 header:
   overlay_image: /assets/images/banner.png
-  overlay_filter: "0.80"
+  overlay_filter: "0.70"
   actions:
     - label: "View Research"
       url: "/research/"
