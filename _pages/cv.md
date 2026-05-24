@@ -12,7 +12,7 @@ pagination: false
   <h1>Davinder Singh</h1>
   <p>PhD Research Scholar at IIT Bombay working on Quantum Information, Quantum Machine Learning, and temporal learning.</p>
 
-  <a href="/assets/files/Davinder_Singh_CV.pdf" class="btn btn--primary btn--large">Download PDF CV</a>
+  <a href="/assets/files/Davinder_Singh_CV.pdf" class="btn btn--primary btn--large">Download PDF CV (old)</a>
 </div>
 
 ## Research Summary
