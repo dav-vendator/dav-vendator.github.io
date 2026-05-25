@@ -3,6 +3,7 @@
   url: "https://towardsdatascience.com/the-hidden-bottleneck-in-quantum-machine-learning-getting-data-into-a-quantum-computer/"
   date: "2026"
   type: "Article"
+  image: "https://towardsdatascience.com/wp-content/uploads/2026/05/embedding_cover-scaled-1.jpg"
   description: "Explores why loading classical data into quantum systems is one of the central bottlenecks in Quantum Machine Learning."
 
 - title: "The Problem Nobody Talks About in Quantum Machine Learning"
@@ -10,6 +11,7 @@
   url: "https://dvendator.medium.com/the-problem-nobody-talks-about-in-quantum-machine-learning-0c10344d9e9f"
   date: "2026-05-10"
   type: "Article"
+  image: "https://cdn-images-1.medium.com/max/2600/0*qQ2UJgicFKxldcDf"
   description: "Exploring one of the most overlooked practical bottlenecks in Quantum Machine Learning."
 
 - title: "How Does the Brain Store Facts? Maybe It Doesn’t."
@@ -17,6 +19,7 @@
   url: "https://dvendator.medium.com/how-does-the-brain-store-facts-maybe-it-doesnt-1a58569f0bc3"
   date: "2026-05-03"
   type: "Article"
+  image: "https://cdn-images-1.medium.com/max/1024/1*5yZ3kdudnYU_zl2mc-f2iQ.png"
   description: "Thoughts on memory, cognition, representation, and information."
 
 - title: "Let’s Program A Quantum Computer!"
@@ -24,6 +27,7 @@
   url: "https://medium.com/codex/lets-program-a-quantum-computer-3ab58d9c5370"
   date: "2023-10-22"
   type: "Article"
+  image: "https://cdn-images-1.medium.com/max/1024/1*5HwD53Ah4XgMh5M_9LGfGg.jpeg"
   description: "An introduction to programming and thinking in quantum systems."
 
 - title: "Introduction to Fuzzy Logic"
@@ -31,6 +35,7 @@
   url: "https://medium.com/codex/introduction-to-fuzzy-logic-bf9bb1496a4d"
   date: "2023-10-08"
   type: "Article"
+  image: "https://cdn-images-1.medium.com/max/1024/1*yC7n1723OXUgk0k28x760Q.jpeg"
   description: "Introduction to uncertainty, fuzzy reasoning, and approximate logic systems."
 
 - title: "Quantum Gates & Circuits"
@@ -38,6 +43,7 @@
   url: "https://medium.com/codex/quantum-gates-circuits-8cfdf293615b"
   date: "2022-07-14"
   type: "Article"
+  image: "https://cdn-images-1.medium.com/max/1024/1*34MLz3pNfPuDR0WZ240LlA.jpeg"
   description: "Fundamentals of quantum gates and circuit-based quantum computation."
 
 - title: "Superluminal Communication & Bell's Inequality"
@@ -45,6 +51,7 @@
   url: "https://dvendator.medium.com/the-myths-of-quantum-entanglement-b62225511b68"
   date: "2022-05-24"
   type: "Article"
+  image: "https://cdn-images-1.medium.com/max/1024/1*5iycfKm3FdQ1tRaKOs8B5Q.jpeg"
   description: "Discussing entanglement, Bell inequalities, and misconceptions around faster-than-light communication."
 
 - title: "Quantum Entanglement"
@@ -52,6 +59,7 @@
   url: "https://medium.com/codex/quantum-entanglement-e5d4f0bedeab"
   date: "2022-05-10"
   type: "Article"
+  image: "https://cdn-images-1.medium.com/v2/resize:fit:1024/0*mkNhErs1vQcg3TG1"
   description: "Conceptual introduction to quantum entanglement and non-classical correlations."
 
 - title: "Real-Time Systems And Ada Programming Language"
@@ -59,6 +67,7 @@
   url: "https://dvendator.medium.com/real-time-systems-and-ada-programming-language-74b73b30310d"
   date: "2019-10-02"
   type: "Article"
+  image: "https://cdn-images-1.medium.com/max/1024/1*BuSKoD2aE89-L7ebCD5rvQ.jpeg"
   description: "Overview of real-time systems and the Ada programming language."
 
 - title: "Kotlin Coroutines : A Comprehensive Introduction"
@@ -66,6 +75,7 @@
   url: "https://dvendator.medium.com/kotlin-coroutines-a-comprehensive-introduction-9665fe2f035e"
   date: "2019-02-07"
   type: "Article"
+  image: "https://cdn-images-1.medium.com/max/1024/0*p8t3SAk6llgl7Idh"
   description: "Comprehensive introduction to asynchronous programming with Kotlin coroutines."
 
 - title: "Exploring Kotlin Anko"
@@ -73,4 +83,5 @@
   url: "https://dvendator.medium.com/exploring-kotlin-anko-ff8cf0812106"
   date: "2019-01-30"
   type: "Article"
+  image: "https://cdn-images-1.medium.com/max/1024/0*cfVSZrDmQ9niABHz"
   description: "Exploring Android development utilities using the Kotlin Anko library."
