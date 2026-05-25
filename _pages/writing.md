@@ -35,7 +35,9 @@ I write about Quantum Computing, Quantum Machine Learning, Information Theory, a
       </div>
 
       <p>{{ article.description }}</p>
-
+      <p>  
+      
+      </p>
       <a
         href="{{ article.url }}"
         class="btn btn--primary"
@@ -44,6 +46,10 @@ I write about Quantum Computing, Quantum Machine Learning, Information Theory, a
       >
         Read Article →
       </a>
+
+      <p>  
+      
+      </p>
 
     </div>
 
