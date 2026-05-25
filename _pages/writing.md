@@ -62,6 +62,7 @@ pagination: false
 
       <p>{{ article.description }}</p>
 
+      <div class="text-center">
       <a
         href="{{ article.url }}"
         class="btn btn--primary article-btn"
@@ -70,9 +71,18 @@ pagination: false
       >
         Read Article →
       </a>
-
     </div>
 
+      <!-- <a
+        href="{{ article.url }}"
+        class="btn btn--primary article-btn"
+        target="_blank"
+        rel="noopener"
+      >
+        Read Article →
+      </a> -->
+
+    </div>
   </article>
 {% endfor %}
 </div>
