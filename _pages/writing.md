@@ -8,51 +8,79 @@ toc: false
 pagination: false
 ---
 
-# Writing & Technical Articles
+<section class="writing-hero">
+  <p class="eyebrow">Writing & Technical Articles</p>
 
-I write about Quantum Computing, Quantum Machine Learning, Information Theory, and complex systems with a focus on intuition and conceptual clarity.
+  <h1>Explaining quantum ideas through intuition, computation, and research.</h1>
 
+  <p>
+    I write about Quantum Computing, Quantum Machine Learning, Information Theory,
+    and complex systems with a focus on conceptual clarity and research-oriented thinking.
+  </p>
+</section>
+
+<div class="writing-stats">
+  <div>
+    <strong>{{ site.data.articles | size }}</strong>
+    <span>Articles</span>
+  </div>
+
+  <div>
+    <strong>QML</strong>
+    <span>Main Focus</span>
+  </div>
+
+  <div>
+    <strong>Medium / TDS</strong>
+    <span>Platforms</span>
+  </div>
+</div>
 
 ## Featured Articles
 
-<div class="cv-grid">
+<div class="article-grid">
 {% for article in site.data.articles %}
   <article class="article-card">
 
-    <img
-      src="{{ article.image }}"
-      alt="{{ article.title }}"
-      class="article-image"
-      loading="lazy"
-    >
+    <div class="article-image-wrap">
+      <img
+        src="{{ article.image }}"
+        alt="{{ article.title }}"
+        class="article-image"
+        loading="lazy"
+      >
+    </div>
 
     <div class="article-content">
 
-      <h3>{{ article.title }}</h3>
-
       <div class="article-meta">
-        {{ article.platform }} · {{ article.date }}
+        <span>{{ article.platform }}</span>
+        <span>{{ article.date }}</span>
       </div>
 
+      <h3>{{ article.title }}</h3>
+
       <p>{{ article.description }}</p>
-      <p>  
-      
-      </p>
+
       <a
         href="{{ article.url }}"
-        class="btn btn--primary"
+        class="btn btn--primary article-btn"
         target="_blank"
         rel="noopener"
       >
         Read Article →
       </a>
 
-      <p>  
-      
-      </p>
-
     </div>
 
   </article>
 {% endfor %}
+</div>
+
+## Platforms
+
+<div class="tag-grid">
+  <a href="https://medium.com/@dvendator" target="_blank" rel="noopener">Medium</a>
+  <a href="https://medium.com/feed/@dvendator" target="_blank" rel="noopener">RSS Feed</a>
+  <a href="https://towardsdatascience.com/" target="_blank" rel="noopener">Towards Data Science</a>
 </div>
