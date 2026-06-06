@@ -1,74 +1,13 @@
-/* =========================
-   Writing Page
-   ========================= */
-
-.writing-hero {
-  padding: 2.2rem;
-  margin-bottom: 2rem;
-  border-radius: 20px;
-
-  background:
-    radial-gradient(circle at top left, rgba(255, 42, 127, 0.22), transparent 34%),
-    linear-gradient(135deg, rgba(255, 42, 127, 0.12), rgba(11, 16, 38, 0.75));
-
-  border: 1px solid rgba(255, 42, 127, 0.32);
-}
-
-.writing-hero .eyebrow {
-  margin-bottom: 0.7rem;
-  color: #ff7eb6;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.writing-hero h1 {
-  max-width: 850px;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: clamp(1.8rem, 4vw, 3rem);
-  line-height: 1.08;
-}
-
-.writing-hero p {
-  max-width: 780px;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  opacity: 0.88;
-}
-
-.writing-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0 2.5rem;
-}
-
-.writing-stats div {
-  padding: 1rem 1.2rem;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.035);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.writing-stats strong {
-  display: block;
-  color: #ff7eb6;
-  font-size: 1.35rem;
-  margin-bottom: 0.25rem;
-}
-
-.writing-stats span {
-  opacity: 0.75;
-  font-size: 0.9rem;
-}
+---
+---
+@import "minimal-mistakes/skins/neon";
+@import "minimal-mistakes";
 
 /* Article Grid */
 
 .article-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
   align-items: stretch;
 }
@@ -94,17 +33,15 @@
 .article-card:hover {
   transform: translateY(-6px);
   border-color: rgba(255, 42, 127, 0.45);
-
   box-shadow:
     0 0 28px rgba(255, 42, 127, 0.14),
     0 0 80px rgba(255, 42, 127, 0.06);
 }
 
-/* Smaller Image */
+/* Image */
 
 .article-image-wrap {
-  position: relative;
-  height: 125px;
+  height: 120px;
   overflow: hidden;
   flex-shrink: 0;
   background: rgba(255, 42, 127, 0.08);
@@ -114,67 +51,60 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-  transition:
-    transform 0.35s ease,
-    filter 0.35s ease;
 }
 
-.article-card:hover .article-image {
-  transform: scale(1.04);
-  filter: saturate(1.15);
-}
+/* Content */
 
-/* Metadata Badge */
+.article-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.35rem;
+  min-height: 0;
+}
 
 .article-meta {
-  display: inline-flex;
-  gap: 0.45rem;
-  align-items: center;
-  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
 
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.9rem;
   padding: 0.35rem 0.65rem;
 
-  border-radius: 999px;
-
+  border-radius: 400px;
   background: rgba(255, 42, 127, 0.12);
   border: 1px solid rgba(255, 42, 127, 0.32);
 
   color: #ff7eb6;
-  font-size: 0.72rem;
-  font-weight: 700;
-
-  letter-spacing: 0.04em;
+  font-size: 0.60rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
-/* Card Content */
-
-.article-content {
-  height: 375px;
-  display: flex;
-  flex-direction: column;
-  padding: 1.2rem;
-}
-
 .article-content h3 {
-  min-height: 3.1rem;
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.7rem;
+  max-height: 6rem;
+  font-size: 0.90rem;
+  line-height: 1.5;
 
-  font-size: 1.02rem;
-  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: clip;
 }
 
 .article-content p {
-  flex-grow: 1;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem;
 
-  font-size: 0.92rem;
-  line-height: 1.55;
-  opacity: 0.86;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  opacity: 0.82;
 
-  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: auto;
 }
 
 .article-btn,
@@ -183,46 +113,36 @@
   align-self: flex-start;
 }
 
+/* Tablet */
+
+@media (max-width: 1100px) {
+  .article-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 /* Mobile */
 
-@media (max-width: 600px) {
-  .writing-hero {
-    padding: 1.4rem;
-  }
-
-  .writing-hero h1 {
-    font-size: 1.85rem;
-  }
-
+@media (max-width: 700px) {
   .article-grid {
     grid-template-columns: 1fr;
   }
 
   .article-card {
-    height: 430px;
+    height: auto;
+    min-height: 500px;
   }
 
   .article-image-wrap {
-    height: 110px;
-  }
-
-  .article-content {
-    height: 320px;
-    padding: 1rem;
+    height: 130px;
   }
 
   .article-content h3 {
-    min-height: auto;
-    font-size: 1.15rem;
-    line-height: 1.25;
+    -webkit-line-clamp: 3;
   }
 
   .article-content p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-
-  .article-meta {
-    font-size: 0.68rem;
+    -webkit-line-clamp: 4;
   }
 }
+
