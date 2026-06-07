@@ -924,11 +924,17 @@
   }
 }
 
+/* Centralized Introduction Segment Space Optimization */
 .home-intro-wrapper {
-  padding: 3rem 0 1.5rem 0;
+  padding: 1.5rem 1.5rem 0 1.5rem !important; /* Shrunk spacing values */
   text-align: center;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto !important;
+  
+  .feature__row, .feature__item {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
   
   .archive__item-excerpt {
     font-size: clamp(1.25rem, 3vw, 1.65rem) !important;
@@ -940,16 +946,25 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  /* Miniature structured separator line */
+  hr {
+    display: block !important;
+    width: 80px !important;
+    margin: 2rem auto 0 auto !important;
+    border: 0 !important;
+    border-top: 2px solid rgba(255, 42, 127, 0.3) !important; /* Faint neon pink accent bar */
+  }
 }
 
 /* ==========================================================================
-   FEATURE ROW GRID FIX (3-COLUMN SNAP) - PREMIUM REWRITE
+   FEATURE ROW GRID FIX (3-COLUMN SNAP) - STRUCTURED ANCHORS
    ========================================================================== */
 
 .home-features-wrapper {
   max-width: 1200px !important;
   margin: 0 auto !important;
-  padding: 3rem 1.5rem 6rem 1.5rem !important;
+  padding: 1rem 1.5rem 5rem 1.5rem !important; /* Brought layout up tightly under line */
 
   .feature__row {
     display: flex !important;
@@ -958,99 +973,88 @@
     margin: 0 !important;
     padding: 0 !important;
     clear: both !important;
-    gap: 1.5rem !important; /* Elegant spacing between cards */
+    gap: 1.5rem !important;
     
     > div, .feature__item {
+      position: relative !important;
       float: none !important;
-      /* Precise math to ensure exact 3-column split accounting for gaps */
       width: calc(33.333% - 1rem) !important; 
       margin: 0 !important;
-      padding: 2.2rem 1.8rem !important; /* Generous breathing room */
+      padding: 2.2rem 1.8rem 1.8rem 1.8rem !important; 
       
-      /* Premium Glassmorphic Foundation */
-      background: rgba(255, 255, 255, 0.02) !important;
-      border: 1px solid rgba(255, 255, 255, 0.06) !important;
-      border-radius: 24px !important;
+      background: rgba(15, 18, 36, 0.7) !important; 
+      border: 1px solid rgba(255, 255, 255, 0.05) !important;
+      border-top: 3px solid rgba(176, 38, 255, 0.4) !important; /* Structural neon top header bar */
+      border-radius: 16px !important;
       box-sizing: border-box !important;
       
       display: flex !important;
       flex-direction: column !important;
       align-items: flex-start !important;
-      
-      /* Silky smooth physics for hover interactions */
-      transition: 
-        border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
-        box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
-        transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
 
-      /* High-End Quantum Bloom Hover Interaction */
       &:hover {
-        transform: translateY(-6px) !important;
-        border-color: rgba(0, 240, 255, 0.35) !important; /* Glowing cyan profile border */
-        background: linear-gradient(145deg, rgba(255, 255, 255, 0.035), rgba(0, 240, 255, 0.01)) !important;
-        box-shadow: 
-          0 12px 30px rgba(0, 0, 240, 0.03),
-          0 0 20px rgba(0, 240, 255, 0.08) !important;
+        transform: translateY(-5px) !important;
+        border-color: rgba(0, 240, 255, 0.25) !important;
+        border-top-color: #00f0ff !important; 
+        box-shadow: 0 0 25px rgba(0, 240, 255, 0.08) !important;
           
-        .archive__item-title {
-          color: #00f0ff !important; /* Title pops with cyan glow on card hover */
-        }
-        
+        .archive__item-title { color: #00f0ff !important; }
         .btn.cv-btn-secondary {
-          background: rgba(255, 42, 127, 0.12) !important;
+          background: #ff2a7f !important;
+          color: #0b1026 !important;
           border-color: #ff2a7f !important;
-          box-shadow: 0 0 12px rgba(255, 42, 127, 0.25);
         }
       }
 
-      /* Card Typography Blueprint */
       .archive__item-title {
-        font-size: 1.35rem !important;
+        font-size: 1.3rem !important;
         margin-top: 0 !important;
-        margin-bottom: 0.95rem !important;
+        margin-bottom: 0.75rem !important;
         color: #ffffff !important;
         font-weight: 700 !important;
         letter-spacing: -0.01em !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+        padding-bottom: 0.75rem;
+        width: 100%;
         transition: color 0.25s ease !important;
       }
 
       .archive__item-excerpt {
-        font-size: 0.86rem !important;
-        line-height: 1.65 !important;
-        color: rgba(255, 255, 255, 0.72) !important; /* Boosted contrast for readability */
-        margin-bottom: 2rem !important;
+        font-size: 0.88rem !important;
+        line-height: 1.6 !important;
+        color: rgba(255, 255, 255, 0.7) !important;
+        margin-top: 0.5rem !important;
+        margin-bottom: 2.5rem !important; 
         font-weight: 400 !important;
       }
 
-      /* Clean Button Alignment Override */
       .btn.cv-btn-secondary {
         margin-top: auto !important;
-        width: 100% !important; /* Stretches wide for a clean layout layout look */
+        width: 100% !important;
         text-align: center !important;
         justify-content: center !important;
-        padding: 0.6rem 1rem !important;
+        padding: 0.65rem 1rem !important;
         font-size: 0.75rem !important;
-        background: rgba(255, 42, 127, 0.04) !important; /* Soft default tint */
-        border-radius: 12px !important;
+        background: transparent !important;
+        border: 1px solid rgba(255, 42, 127, 0.4) !important;
+        border-radius: 8px !important;
       }
     }
   }
 }
 
-/* Fluid Responsive Breaking Rules */
 @media (max-width: 1000px) {
   .home-features-wrapper .feature__row {
     gap: 1.25rem !important;
     > div, .feature__item {
       width: calc(50% - 0.625rem) !important;
-      padding: 2rem 1.5rem !important;
     }
   }
 }
 
 @media (max-width: 680px) {
   .home-features-wrapper .feature__row {
-    grid-template-columns: 1fr !important;
     > div, .feature__item {
       width: 100% !important;
     }
