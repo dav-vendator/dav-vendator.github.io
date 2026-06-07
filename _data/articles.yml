@@ -5,6 +5,10 @@
   type: "Article"
   image: "https://towardsdatascience.com/wp-content/uploads/2026/05/embedding_cover-scaled-1.jpg"
   description: "An analysis of the core challenges and state-of-the-art methods for encoding classical data into quantum systems."
+  tags:
+    - QML
+    - "Editor's Pick"
+    - Paid
 
 - title: "The Problem Nobody Talks About in Quantum Machine Learning"
   platform: "Medium"
@@ -13,6 +17,9 @@
   type: "Article"
   image: "https://cdn-images-1.medium.com/max/2600/0*qQ2UJgicFKxldcDf"
   description: "An essential exploration of data loading constraints and the hidden operational bottlenecks facing modern QML architectures."
+  tags:
+    - QML
+    - Research
 
 - title: "How Does the Brain Store Facts? Maybe It Doesn’t."
   platform: "Medium"
@@ -21,6 +28,9 @@
   type: "Article"
   image: "https://cdn-images-1.medium.com/max/1024/1*5yZ3kdudnYU_zl2mc-f2iQ.png"
   description: "A philosophical and cognitive perspective on memory formation, physical representation, and theoretical biological information processing."
+  tags:
+    - Memory
+    - Information Theory
 
 - title: "Let’s Program A Quantum Computer!"
   platform: "Medium"
@@ -29,6 +39,9 @@
   type: "Article"
   image: "https://cdn-images-1.medium.com/max/1024/1*5HwD53Ah4XgMh5M_9LGfGg.jpeg"
   description: "A practical introductory guide to writing code, executing algorithms, and shifting mindsets for quantum computing platforms."
+  tags:
+    - QC
+    - Tutorial
 
 - title: "Introduction to Fuzzy Logic"
   platform: "Medium"
@@ -37,6 +50,9 @@
   type: "Article"
   image: "https://cdn-images-1.medium.com/max/1024/1*yC7n1723OXUgk0k28x760Q.jpeg"
   description: "A foundational breakdown of mathematical uncertainty, approximate reasoning models, and modern fuzzy inference control systems."
+  tags:
+    - AI
+    - Foundations
 
 - title: "Quantum Gates & Circuits"
   platform: "Medium"
@@ -45,6 +61,9 @@
   type: "Article"
   image: "https://cdn-images-1.medium.com/max/1024/1*34MLz3pNfPuDR0WZ240LlA.jpeg"
   description: "A comprehensive look at fundamental quantum operators, circuit design principles, and universal gate-based computation models."
+  tags:
+    - QC
+    - Tutorial
 
 - title: "Superluminal Communication & Bell's Inequality"
   platform: "Medium"
@@ -53,6 +72,9 @@
   type: "Article"
   image: "https://cdn-images-1.medium.com/max/1024/1*5iycfKm3FdQ1tRaKOs8B5Q.jpeg"
   description: "Deconstructing common myths surrounding quantum entanglement, non-local correlations, and constraints on faster-than-light signaling."
+  tags:
+    - QC
+    - Foundations
 
 - title: "Quantum Entanglement"
   platform: "Medium"
@@ -61,6 +83,9 @@
   type: "Article"
   image: "https://cdn-images-1.medium.com/v2/resize:fit:1024/0*mkNhErs1vQcg3TG1"
   description: "An intuitive mathematical and conceptual introduction to non-classical correlations and multipartite system states."
+  tags:
+    - QC
+    - Foundations
 
 - title: "Real-Time Systems And Ada Programming Language"
   platform: "Medium"
@@ -69,6 +94,8 @@
   type: "Article"
   image: "https://cdn-images-1.medium.com/max/1024/1*BuSKoD2aE89-L7ebCD5rvQ.jpeg"
   description: "An overview of deterministic software design, mission-critical constraints, and programming with the Ada language framework."
+  tags:
+    - Systems
 
 - title: "Kotlin Coroutines : A Comprehensive Introduction"
   platform: "Medium"
@@ -77,6 +104,8 @@
   type: "Article"
   image: "https://cdn-images-1.medium.com/max/1024/0*p8t3SAk6llgl7Idh"
   description: "A technical deep dive into non-blocking concurrency, asynchronous code design patterns, and efficient thread management in Kotlin."
+  tags:
+    - Software Engineering
 
 - title: "Exploring Kotlin Anko"
   platform: "Medium"
@@ -85,3 +114,5 @@
   type: "Article"
   image: "https://cdn-images-1.medium.com/max/1024/0*cfVSZrDmQ9niABHz"
   description: "A legacy review of streamlining Android UI layout creation and application development using the Anko DSL library."
+  tags:
+    - Software Engineering

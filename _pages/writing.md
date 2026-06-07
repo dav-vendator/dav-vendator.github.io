@@ -58,6 +58,14 @@ pagination: false
         <span>{{ article.date }}</span>
       </div>
 
+      {% if article.tags %}
+      <div class="article-tags">
+        {% for tag in article.tags %}
+        <span class="article-tag tag-{{ tag | slugify }}">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+
       <h3>{{ article.title }}</h3>
 
       <p>{{ article.description }}</p>
