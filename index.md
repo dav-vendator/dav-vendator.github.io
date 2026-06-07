@@ -3,38 +3,45 @@ layout: splash
 title: "Davinder Singh"
 header:
   overlay_image: /assets/images/banner.png
-  overlay_filter: "0.70"
+  overlay_filter: "0.75"
   actions:
     - label: "View Research"
       url: "/research/"
+      class: "cv-btn-primary"
     - label: "Read Writing"
       url: "/writing/"
+      class: "home-btn-secondary"
 
-excerpt: "PhD @ IIT Bombay exploring Quantum Information, Quantum Machine Learning, and temporal memory in quantum systems."
+excerpt: "PhD Research Scholar at IIT Bombay exploring Quantum Information, Quantum Machine Learning, and temporal memory in complex systems."
 
 intro:
-  - excerpt: "Understanding memory, correlations, and learning through coherent quantum evolution."
-
-feature_row:
-  - title: "Research"
-    excerpt: "Coherent quantum recurrent architectures, temporal correlations, and quantum memory."
-    url: /research/
-    btn_label: "View Research"
-    btn_class: "btn--primary"
-
-  - title: "Writing"
-    excerpt: "Articles on quantum computing, machine learning, memory, and complex systems."
-    url: /writing/
-    btn_label: "Read Writing"
-    btn_class: "btn--primary"
-
-  - title: "Projects"
-    excerpt: "Selected technical, research, and public-facing projects."
-    url: /projects/
-    btn_label: "View Projects"
-    btn_class: "btn--primary"
+  - excerpt: "Understanding structural representation, correlation networks, and processing memory loops through coherent quantum evolution."
 ---
 
-{% include feature_row id="intro" type="center" %}
+<div class="home-intro-wrapper">
+  {% include feature_row id="intro" type="center" %}
+</div>
 
-{% include feature_row %}
+<div class="home-features-wrapper">
+  <div class="feature__row">
+
+    <div class="feature__item">
+      <h2 class="archive__item-title">Research Paradigms</h2>
+      <p class="archive__item-excerpt">Diving into coherent quantum recurrent architectures, non-Markovian memory, and dynamic tracking vectors.</p>
+      <a href="/research/" class="btn cv-btn-secondary">Explore Work</a>
+    </div>
+
+    <div class="feature__item">
+      <h2 class="archive__item-title">Technical Writing</h2>
+      <p class="archive__item-excerpt">Translating mathematical formulations into clear, intuition-driven insights across QML and computing domains.</p>
+      <a href="/writing/" class="btn cv-btn-secondary">Open Articles</a>
+    </div>
+
+    <div class="feature__item">
+      <h2 class="archive__item-title">Core Frameworks</h2>
+      <p class="archive__item-excerpt">Practical software implementations, libraries, and simulation blueprints built for tracking sequential structures.</p>
+      <a href="/projects/" class="btn cv-btn-secondary">Launch Projects</a>
+    </div>
+
+  </div>
+</div>
