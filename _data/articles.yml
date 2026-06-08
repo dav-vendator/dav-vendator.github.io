@@ -1,3 +1,15 @@
+- title: "How to Keep Quantum Information Alive for Machine Learning"
+  platform: "TDS"
+  url: "https://towardsdatascience.com/how-to-keep-quantum-information-alive-for-machine-learning/"
+  date: "June 2026"
+  type: "Article"
+  image: "https://towardsdatascience.com/wp-content/uploads/2026/06/qerror-scaled-1.jpg"
+  description: "An introduction to Quantum Error Correction and the challenges of protecting quantum information from noise and decoherence in machine learning systems."
+  tags:
+    - QML
+    - QEC
+    - "Editor's Pick"
+
 - title: "The Hidden Bottleneck in Quantum Machine Learning: Getting Data into a Quantum Computer"
   platform: "TDS"
   url: "https://towardsdatascience.com/the-hidden-bottleneck-in-quantum-machine-learning-getting-data-into-a-quantum-computer/"
@@ -8,7 +20,6 @@
   tags:
     - QML
     - "Editor's Pick"
-    - Paid
 
 - title: "The Problem Nobody Talks About in Quantum Machine Learning"
   platform: "Medium"
@@ -20,6 +31,7 @@
   tags:
     - QML
     - Research
+    - Paid
 
 - title: "How Does the Brain Store Facts? Maybe It Doesn’t."
   platform: "Medium"
