@@ -1,0 +1,155 @@
+/* ==========================================================================
+   INDIVIDUAL DEEP PROJECT PAGES (DASHBOARD ENGINE)
+   ========================================================================== */
+
+.project-back-nav {
+  margin-bottom: 1.5rem;
+  a {
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: #00f0ff;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    
+    &:hover { color: #ff2a7f; }
+  }
+}
+
+.project-deep-hero {
+  margin-bottom: 3rem;
+  
+  h1 {
+    font-size: clamp(2rem, 4vw, 2.8rem) !important;
+    font-weight: 800;
+    margin: 0.75rem 0;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+  }
+  
+  .hero-abstract {
+    font-size: 1.1rem;
+    line-height: 1.65;
+    opacity: 0.85;
+    max-width: 850px;
+  }
+}
+
+/* 2-Column Dashboard System Layout */
+.project-dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.project-main-specs {
+  h2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 0.5rem;
+    color: #ffffff;
+    font-size: 1.4rem;
+  }
+  
+  h3 {
+    color: #00f0ff;
+    font-size: 1.1rem;
+    margin-top: 1.75rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    opacity: 0.8;
+  }
+}
+
+.tech-spec-callout {
+  background: rgba(176, 38, 255, 0.03);
+  border: 1px solid rgba(176, 38, 255, 0.15);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin: 2rem 0;
+  
+  h3 {
+    margin: 0 0 0.75rem 0 !important;
+    color: #b026ff !important;
+    font-family: monospace;
+    font-size: 0.8rem !important;
+    letter-spacing: 0.05em;
+  }
+  
+  ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    li {
+      font-size: 0.88rem;
+      margin-bottom: 0.4rem;
+      opacity: 0.85;
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+}
+
+/* Sidebar Monitor Components */
+.project-sidebar-monitor {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sidebar-console-card {
+  background: rgba(15, 18, 36, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.25rem;
+  
+  h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}
+
+.console-meta-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.25rem;
+  
+  td {
+    padding: 0.4rem 0 !important;
+    font-size: 0.85rem;
+    border: none !important;
+    
+    &:first-child {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    &:last-child {
+      text-align: right;
+      color: #ffffff;
+    }
+  }
+}
+
+.full-width-btn {
+  width: 100% !important;
+  justify-content: center !important;
+  text-align: center !important;
+  border-radius: 8px !important;
+  font-size: 0.75rem !important;
+}
+
+/* Tablet & Mobile Grid Collapse Fallbacks */
+@media (max-width: 950px) {
+  .project-dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .project-sidebar-monitor {
+    order: -1; /* Puts progress telemetry box on top layout for fluid viewing mobile */
+  }
+}
