@@ -116,6 +116,7 @@ toc: false
           <span>Implementation Progress</span>
           <span>45%</span>
         </div>
+
         <div class="progress-bar-bg">
           <div class="progress-bar-fill" style="width: 45%;"></div>
         </div>

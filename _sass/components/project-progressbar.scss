@@ -5,12 +5,13 @@
   .progress-label-row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: monospace;
     font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.4);
-    margin-bottom: 0.4rem;
+    color: rgba(255, 255, 255, 0.45);
+    margin-bottom: 0.45rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
   }
 
   .progress-bar-bg {
@@ -24,8 +25,39 @@
 
   .progress-bar-fill {
     height: 100%;
-    background: linear-gradient(90deg, #b026ff, #00f0ff); /* Purple to Cyan gradient */
-    box-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
     border-radius: 999px;
+    transition: width 0.6s ease;
+  }
+}
+
+/* Featured Projects (Flagship) */
+
+.project-card.featured {
+  .progress-bar-fill {
+    background: linear-gradient(
+      90deg,
+      #b026ff,
+      #ff0080
+    );
+
+    box-shadow:
+      0 0 10px rgba(176, 38, 255, 0.45),
+      0 0 16px rgba(255, 0, 128, 0.25);
+  }
+}
+
+/* Non-Featured Projects */
+
+.project-card:not(.featured) {
+  .progress-bar-fill {
+    background: linear-gradient(
+      90deg,
+      #00c2ff,
+      #00f0ff
+    );
+
+    box-shadow:
+      0 0 10px rgba(0, 240, 255, 0.35),
+      0 0 16px rgba(0, 194, 255, 0.2);
   }
 }

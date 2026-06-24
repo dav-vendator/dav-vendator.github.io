@@ -1,56 +1,47 @@
-# - title: "VLib — Modern C++ Numerical Computing Library"
-#   repo_index: "01"
-#   tech_label: "C++20"
-#   tech_class: "blue"
-#   progress: 45
+- title: "VLib — Modern C++ Numerical Computing Library"
+  slug: "vlib"
+  repo_index: "01"
+  tech_label: "C++20"
+  tech_class: "purple"
+  progress: 45
+  description: "A modern C++ library built from scratch to explore memory management, data structures, linear algebra, and tensor computation."
+  repo_url: "https://github.com/dav-vendator/vlib"
+  featured: true
+  tags:
+   - C++
+   - Numerical Computing
+   - Linear Algebra
+   - Systems
+   - HPC
 
-#   description: >
-#     A modern C++ library built from scratch to explore memory management,
-#     data structures, linear algebra, and tensor computation. Developed as a
-#     hands-on journey into the foundations of high-performance numerical
-#     computing and machine learning systems.
+- title: "Emulators — Building Computers in Software"
+  slug: "emulators"
+  repo_index: "06"
+  tech_label: "Systems"
+  tech_class: "pink"
+  progress: 35
+  description: "A collection of emulator projects exploring instruction execution, memory models, CPU architecture, and low-level systems design."
+  repo_url: "https://github.com/dav-vendator/Emulators"
+  featured: true
+  tags:
+   - C++
+   - Computer Architecture
+   - Emulation
+   - Systems
+   - CPU Design
 
-#   url: "https://github.com/dav-vendator/vlib"
-#   featured: true
-
-#   tags:
-#     - C++
-#     - Numerical Computing
-#     - Linear Algebra
-#     - Systems
-#     - HPC
-
-#   todo:
-#     - task: "Matrix class and operations"
-#       done: true
-
-#     - task: "Tensor container implementation"
-#       done: false
-
-#     - task: "TensorView and slicing"
-#       done: false
-
-    # - task: "Broadcasting support"
-    #   done: false
-
-    # - task: "Performance optimization"
-    #   done: false
-
-    # - task: "Benchmark suite validation"
-    #   done: false
-
-  - title: "VLib — Modern C++ Numerical Computing Library"
-    slug: "vlib"
-    repo_index: "01"
-    tech_label: "C++20"
-    tech_class: "purple"
-    progress: 45
-    description: "A modern C++ library built from scratch to explore memory management, data structures, linear algebra, and tensor computation."
-    repo_url: "https://github.com/dav-vendator/vlib"
-    featured: true
-    tags:
-     - C++
-     - Numerical Computing
-     - Linear Algebra
-     - Systems
-     - HPC
+- title: "StoryDapp — Decentralized Story Publishing Platform"
+  slug: "storydapp"
+  repo_index: "07"
+  tech_label: "Web3"
+  tech_class: "orange"
+  progress: 100
+  description: "A decentralized application exploring blockchain-based publishing, smart contracts, and distributed ownership of digital content."
+  repo_url: "https://github.com/dav-vendator/StoryDapp"
+  featured: false
+  tags:
+   - Blockchain
+   - Ethereum
+   - Smart Contracts
+   - Web3
+   - Full Stack

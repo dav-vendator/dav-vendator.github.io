@@ -35,12 +35,22 @@ pagination: false
 
       <!-- Consolidated Progress Tracking Bar -->
       {% if project.progress %}
-        <div class="project-progress-container">
-          <div class="progress-bar-bg">
-            <div class="progress-bar-fill" style="width: {{ project.progress }}%;"></div>
+      <div class="project-progress-container">
+
+        <div class="progress-label-row">
+          <span>Progress</span>
+          <span>{{ project.progress }}%</span>
+        </div>
+
+        <div class="progress-bar-bg">
+          <div
+            class="progress-bar-fill"
+            style="width: {{ project.progress }}%;">
           </div>
         </div>
-      {% endif %}
+
+      </div>
+    {% endif %}
 
       <!-- Modern Dual Button Action Tray -->
       <div class="project-dual-actions">
