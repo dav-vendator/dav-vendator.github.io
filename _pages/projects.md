@@ -40,12 +40,37 @@ pagination: false
       </div>
       {% endif %}
 
+      {% if project.progress %}
+        <div class="project-progress-container">
+            <div class="progress-label-row">
+            <span>Status: {% if project.progress == 100 %}Stabilized{% else %}Active Development{% endif %}</span>
+            <span>{{ project.progress }}%</span>
+            </div>
+            <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: {{ project.progress }}%;"></div>
+            </div>
+        </div>
+      {% endif %}
+
+      {% if project.todo %}
+            <div class="project-todo-panel">
+                <div class="todo-title">// Project Roadmap </div>
+                <ul class="todo-list">
+                {% for item in project.todo %}
+                    <li class="{% if item.done %}completed{% else %}pending{% endif %}">
+                    <span class="todo-checkbox"></span>
+                    <span class="todo-task">{{ item.task }}</span>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+      {% endif %}
+
       <div class="project-action-tray">
         <a href="{{ project.url }}" class="btn project-link-btn" target="_blank" rel="noopener">
           {% if project.featured %}Source Repository &rarr;{% else %}Explore Design{% endif %}
         </a>
       </div>
-
     </div>
   {% endfor %}
 </div>

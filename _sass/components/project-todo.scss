@@ -1,0 +1,61 @@
+.project-todo-panel {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+
+  .todo-title {
+    font-family: monospace;
+    font-size: 0.72rem;
+    color: #ff2a7f; /* Neon Pink heading */
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.6rem;
+  }
+
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.78rem;
+      margin-bottom: 0.4rem;
+      line-height: 1.4;
+
+      &:last-child { margin-bottom: 0; }
+
+      .todo-checkbox {
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+        box-sizing: border-box;
+        display: inline-block;
+        flex-shrink: 0;
+      }
+
+      &.completed {
+        color: rgba(255, 255, 255, 0.4);
+        // text-decoration: line-through;
+        .todo-checkbox {
+          background: #39ff14; /* Neon Green check */
+          box-shadow: 0 0 6px #39ff14;
+          border: none;
+        }
+      }
+
+      &.pending {
+        color: rgba(255, 255, 255, 0.8);
+        .todo-checkbox {
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          background: transparent;
+        }
+      }
+    }
+  }
+}
