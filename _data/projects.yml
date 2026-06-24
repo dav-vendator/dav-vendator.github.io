@@ -1,8 +1,8 @@
 - title: "VLib — Modern C++ Numerical Computing Library"
   slug: "vlib"
   repo_index: "01"
-  tech_label: "C++20"
-  tech_class: "blue"
+  tech_label: "Numerical System"
+  tech_class: "red"
   progress: 45
   description: "A modern C++ library built from scratch to explore memory management, data structures, linear algebra, and tensor computation."
   repo_url: "https://github.com/dav-vendator/vlib"
@@ -16,7 +16,7 @@
 
 - title: "Emulators — Building Computers in Software"
   slug: "emulators"
-  repo_index: "06"
+  repo_index: "02"
   tech_label: "Systems"
   tech_class: "blue"
   progress: 35
@@ -32,7 +32,7 @@
 
 - title: "StoryDapp — Decentralized Story Publishing Platform"
   slug: "storydapp"
-  repo_index: "07"
+  repo_index: "03"
   tech_label: "Web3"
   tech_class: "orange"
   progress: 100
