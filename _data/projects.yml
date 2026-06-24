@@ -1,0 +1,17 @@
+- title: "VLib — Modern C++ Numerical Computing Library"
+  repo_index: "01"
+  tech_label: "C++20"
+  tech_class: "blue"
+  description: >
+    A modern C++ library built from scratch to explore memory management,
+    data structures, linear algebra, and tensor computation. Developed as a
+    hands-on journey into the foundations of high-performance numerical and
+    machine learning systems.
+  url: "https://github.com/dav-vendator/vlib"
+  featured: true
+  tags:
+    - C++
+    - Tensor
+    - Linear Algebra
+    - Systems
+    - HPC
