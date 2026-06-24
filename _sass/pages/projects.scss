@@ -94,9 +94,65 @@
     padding: 0.2rem 0.55rem;
     border-radius: 6px;
     
-    &.purple { background: rgba(176, 38, 255, 0.12); color: #b026ff; border: 1px solid rgba(176, 38, 255, 0.25); }
-    &.cyan { background: rgba(0, 240, 255, 0.12); color: #00f0ff; border: 1px solid rgba(0, 240, 255, 0.25); }
-    &.pink { background: rgba(255, 42, 127, 0.12); color: #ff2a7f; border: 1px solid rgba(255, 42, 127, 0.25); }
+    &.purple { 
+      background: rgba(176, 38, 255, 0.12); 
+      color: #b026ff; 
+      border: 1px solid rgba(176, 38, 255, 0.25); 
+    }
+
+    &.cyan { 
+      background: rgba(0, 240, 255, 0.12); 
+      color: #00f0ff; 
+      border: 1px solid rgba(0, 240, 255, 0.25); 
+    }
+
+    &.pink { 
+      background: rgba(255, 42, 127, 0.12); 
+      color: #ff2a7f; 
+      border: 1px solid rgba(255, 42, 127, 0.25); 
+    }
+
+    &.green { 
+      background: rgba(57, 255, 20, 0.08) !important; 
+      color: #39ff14 !important; 
+      border: 1px solid rgba(57, 255, 20, 0.25) !important; 
+    }
+    
+    &.yellow { 
+      background: rgba(255, 212, 59, 0.08) !important; 
+      color: #ffd43b !important; 
+      border: 1px solid rgba(255, 212, 59, 0.25) !important; 
+    }
+
+    &.orange { 
+      background: rgba(255, 140, 66, 0.08) !important; 
+      color: #ff8c42 !important; 
+      border: 1px solid rgba(255, 140, 66, 0.25) !important; 
+    }
+
+    &.blue { 
+      background: rgba(101, 154, 210, 0.08) !important; 
+      color: #659ad2 !important; 
+      border: 1px solid rgba(101, 154, 210, 0.25) !important; 
+    }
+
+    &.bright-blue {
+      background: rgba(0, 102, 255, 0.08) !important;
+      color: #0066ff !important;
+      border: 1px solid rgba(0, 102, 255, 0.25) !important;
+    }
+
+    &.red { 
+      background: rgba(255, 107, 107, 0.08) !important; 
+      color: #ff6b6b !important; 
+      border: 1px solid rgba(255, 107, 107, 0.25) !important; 
+    }
+
+    &.white { 
+      background: rgba(255, 255, 255, 0.04) !important; 
+      color: rgba(255, 255, 255, 0.85) !important; 
+      border: 1px solid rgba(255, 255, 255, 0.15) !important; 
+    }
   }
 
   .repo-meta {
@@ -145,126 +201,159 @@
       transition: all 0.2s ease;
     }
       
-    /* Specific Modifier Classes (Moved out of parent span block) */
-    
-    .tag-c {
+/* ==========================================================
+   CANONICAL PROJECT TAG REGISTRY
+   Based on SYSTEM PALETTE MATRIX v1.0
+   ========================================================== */
+
+    /* ---------- Quantum ---------- */
+
+    .tag-quantum-ml {
+      border-color: #b026ff !important;
+      color: #b026ff !important;
+      background: rgba(176, 38, 255, 0.08) !important;
+      box-shadow: 0 0 6px rgba(176, 38, 255, 0.2);
+    }
+
+    .tag-qiskit {
+      border-color: #b026ff !important;
+      color: #b026ff !important;
+      background: rgba(176, 38, 255, 0.08) !important;
+      box-shadow: 0 0 6px rgba(176, 38, 255, 0.2);
+    }
+
+    .tag-pennylane {
+      border-color: #00f0ff !important;
+      color: #00f0ff !important;
+      background: rgba(0, 240, 255, 0.08) !important;
+      box-shadow: 0 0 6px rgba(0, 240, 255, 0.2);
+    }
+
+    /* ---------- Research ---------- */
+
+    .tag-research {
       border-color: #659ad2 !important;
       color: #659ad2 !important;
       background: rgba(101, 154, 210, 0.08) !important;
       box-shadow: 0 0 6px rgba(101, 154, 210, 0.2);
     }
 
-    .tag-quantum-ml {
-      border-color: #a855f7 !important;
-      color: #a855f7 !important;
-      background: rgba(168, 85, 247, 0.08) !important;
-      box-shadow: 0 0 6px rgba(168, 85, 247, 0.2);
-    }
+    /* ---------- Machine Learning ---------- */
 
-    .tag-pennylane {
-      border-color: #06b6d4 !important;
-      color: #06b6d4 !important;
-      background: rgba(6, 182, 212, 0.08) !important;
-      box-shadow: 0 0 6px rgba(6, 182, 212, 0.2);
-    }
-
-    .tag-time-series {
-      border-color: #f97316 !important;
-      color: #f97316 !important;
-      background: rgba(249, 115, 22, 0.08) !important;
-      box-shadow: 0 0 6px rgba(249, 115, 22, 0.2);
-    }
-
-    .tag-research {
-      border-color: #eab308 !important;
-      color: #eab308 !important;
-      background: rgba(234, 179, 8, 0.08) !important;
-      box-shadow: 0 0 6px rgba(234, 179, 8, 0.2);
+    .tag-ml {
+      border-color: #00d4aa !important;
+      color: #00d4aa !important;
+      background: rgba(0, 212, 170, 0.08) !important;
+      box-shadow: 0 0 6px rgba(0, 212, 170, 0.2);
     }
 
     .tag-benchmarking {
-      border-color: #14b8a6 !important;
-      color: #14b8a6 !important;
-      background: rgba(20, 184, 166, 0.08) !important;
-      box-shadow: 0 0 6px rgba(20, 184, 166, 0.2);
-    }
-
-    .tag-computer-architecture {
-      border-color: #ef4444 !important;
-      color: #ef4444 !important;
-      background: rgba(239, 68, 68, 0.08) !important;
-      box-shadow: 0 0 6px rgba(239, 68, 68, 0.2);
-    }
-
-    .tag-emulation {
-      border-color: #dc2626 !important;
-      color: #dc2626 !important;
-      background: rgba(220, 38, 38, 0.08) !important;
-      box-shadow: 0 0 6px rgba(220, 38, 38, 0.2);
-    }
-
-    .tag-cpu-design {
-      border-color: #fb7185 !important;
-      color: #fb7185 !important;
-      background: rgba(251, 113, 133, 0.08) !important;
-      box-shadow: 0 0 6px rgba(251, 113, 133, 0.2);
-    }
-
-    .tag-nlp {
-      border-color: #22c55e !important;
-      color: #22c55e !important;
-      background: rgba(34, 197, 94, 0.08) !important;
-      box-shadow: 0 0 6px rgba(34, 197, 94, 0.2);
-    }
-
-    .tag-transformers {
-      border-color: #84cc16 !important;
-      color: #84cc16 !important;
-      background: rgba(132, 204, 22, 0.08) !important;
-      box-shadow: 0 0 6px rgba(132, 204, 22, 0.2);
-    }
-
-    .tag-roberta {
-      border-color: #10b981 !important;
-      color: #10b981 !important;
-      background: rgba(16, 185, 129, 0.08) !important;
-      box-shadow: 0 0 6px rgba(16, 185, 129, 0.2);
-    }
-
-    .tag-multilingual {
-      border-color: #0ea5e9 !important;
-      color: #0ea5e9 !important;
-      background: rgba(14, 165, 233, 0.08) !important;
-      box-shadow: 0 0 6px rgba(14, 165, 233, 0.2);
+      border-color: #00d4aa !important;
+      color: #00d4aa !important;
+      background: rgba(0, 212, 170, 0.08) !important;
+      box-shadow: 0 0 6px rgba(0, 212, 170, 0.2);
     }
 
     .tag-lightning {
-      border-color: #f59e0b !important;
-      color: #f59e0b !important;
-      background: rgba(245, 158, 11, 0.08) !important;
-      box-shadow: 0 0 6px rgba(245, 158, 11, 0.2);
+      border-color: #ffd43b !important;
+      color: #ffd43b !important;
+      background: rgba(255, 212, 59, 0.08) !important;
+      box-shadow: 0 0 6px rgba(255, 212, 59, 0.2);
     }
+
+    /* ---------- Time Series ---------- */
+
+    .tag-time-series {
+      border-color: #ff8c42 !important;
+      color: #ff8c42 !important;
+      background: rgba(255, 140, 66, 0.08) !important;
+      box-shadow: 0 0 6px rgba(255, 140, 66, 0.2);
+    }
+
+    /* ---------- NLP ---------- */
+
+    .tag-nlp {
+      border-color: #39ff14 !important;
+      color: #39ff14 !important;
+      background: rgba(57, 255, 20, 0.08) !important;
+      box-shadow: 0 0 6px rgba(57, 255, 20, 0.2);
+    }
+
+    .tag-transformers {
+      border-color: #ff2a7f !important;
+      color: #ff2a7f !important;
+      background: rgba(255, 42, 127, 0.08) !important;
+      box-shadow: 0 0 6px rgba(255, 42, 127, 0.2);
+    }
+
+    .tag-roberta {
+      border-color: #39ff14 !important;
+      color: #39ff14 !important;
+      background: rgba(57, 255, 20, 0.08) !important;
+      box-shadow: 0 0 6px rgba(57, 255, 20, 0.2);
+    }
+
+    .tag-multilingual {
+      border-color: #00f0ff !important;
+      color: #00f0ff !important;
+      background: rgba(0, 240, 255, 0.08) !important;
+      box-shadow: 0 0 6px rgba(0, 240, 255, 0.2);
+    }
+
+    /* ---------- Systems ---------- */
+
+    .tag-systems {
+      border-color: #ff6b6b !important;
+      color: #ff6b6b !important;
+      background: rgba(255, 107, 107, 0.08) !important;
+      box-shadow: 0 0 6px rgba(255, 107, 107, 0.2);
+    }
+
+    .tag-computer-architecture {
+      border-color: #ff6b6b !important;
+      color: #ff6b6b !important;
+      background: rgba(255, 107, 107, 0.08) !important;
+      box-shadow: 0 0 6px rgba(255, 107, 107, 0.2);
+    }
+
+    .tag-emulation {
+      border-color: #ff6b6b !important;
+      color: #ff6b6b !important;
+      background: rgba(255, 107, 107, 0.08) !important;
+      box-shadow: 0 0 6px rgba(255, 107, 107, 0.2);
+    }
+
+    .tag-cpu-design {
+      border-color: #ff6b6b !important;
+      color: #ff6b6b !important;
+      background: rgba(255, 107, 107, 0.08) !important;
+      box-shadow: 0 0 6px rgba(255, 107, 107, 0.2);
+    }
+
+    /* ---------- CLI / Utilities ---------- */
 
     .tag-cli {
-      border-color: #94a3b8 !important;
-      color: #94a3b8 !important;
-      background: rgba(148, 163, 184, 0.08) !important;
-      box-shadow: 0 0 6px rgba(148, 163, 184, 0.2);
-    }
-
-    .tag-multithreading {
-      border-color: #06b6d4 !important;
-      color: #06b6d4 !important;
-      background: rgba(6, 182, 212, 0.08) !important;
-      box-shadow: 0 0 6px rgba(6, 182, 212, 0.2);
+      border-color: #ffffff !important;
+      color: #ffffff !important;
+      background: rgba(255, 255, 255, 0.04) !important;
+      box-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
     }
 
     .tag-file-handling {
-      border-color: #64748b !important;
-      color: #64748b !important;
-      background: rgba(100, 116, 139, 0.08) !important;
-      box-shadow: 0 0 6px rgba(100, 116, 139, 0.2);
+      border-color: #ffffff !important;
+      color: #ffffff !important;
+      background: rgba(255, 255, 255, 0.04) !important;
+      box-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
     }
+
+    .tag-multithreading {
+      border-color: #00f0ff !important;
+      color: #00f0ff !important;
+      background: rgba(0, 240, 255, 0.08) !important;
+      box-shadow: 0 0 6px rgba(0, 240, 255, 0.2);
+    }
+
+    /* ---------- Numerical Computing ---------- */
 
     .tag-numerical-computing {
       border-color: #00d4aa !important;
@@ -273,75 +362,94 @@
       box-shadow: 0 0 6px rgba(0, 212, 170, 0.2);
     }
 
-    .tag-c {
-      border-color: #659ad2 !important;
-      color: #659ad2 !important;
-      background: rgba(101, 154, 210, 0.08) !important;
-      box-shadow: 0 0 6px rgba(101, 154, 210, 0.2);
-    }
-    
-    .tag-python {
-      border-color: #ffd43b !important;
-      color: #ffd43b !important;
-      background: rgba(255, 212, 59, 0.08) !important;
-      box-shadow: 0 0 6px rgba(255, 212, 59, 0.2);
-    }
-    
-    .tag-cuda {
-      border-color: #76b900 !important;
-      color: #76b900 !important;
-      background: rgba(118, 185, 0, 0.08) !important;
-      box-shadow: 0 0 6px rgba(118, 185, 0, 0.2);
-    }
-    
-    .tag-pytorch {
-      border-color: #ee4c2c !important;
-      color: #ee4c2c !important;
-      background: rgba(238, 76, 44, 0.08) !important;
-      box-shadow: 0 0 6px rgba(238, 76, 44, 0.2);
-    }
-    
-    .tag-qiskit {
-      border-color: #6929c4 !important;
-      color: #6929c4 !important;
-      background: rgba(105, 41, 196, 0.08) !important;
-      box-shadow: 0 0 6px rgba(105, 41, 196, 0.2);
-    }
-    
     .tag-tensor {
       border-color: #00d4aa !important;
       color: #00d4aa !important;
       background: rgba(0, 212, 170, 0.08) !important;
       box-shadow: 0 0 6px rgba(0, 212, 170, 0.2);
     }
-    
+
     .tag-linear-algebra {
       border-color: #ff8c42 !important;
       color: #ff8c42 !important;
       background: rgba(255, 140, 66, 0.08) !important;
       box-shadow: 0 0 6px rgba(255, 140, 66, 0.2);
     }
-    
+
     .tag-hpc {
       border-color: #00f0ff !important;
       color: #00f0ff !important;
       background: rgba(0, 240, 255, 0.08) !important;
       box-shadow: 0 0 6px rgba(0, 240, 255, 0.2);
     }
-    
-    .tag-systems {
+
+    /* ---------- Languages & Frameworks ---------- */
+
+    .tag-cpp {
+      border-color: #659ad2 !important;
+      color: #659ad2 !important;
+      background: rgba(101, 154, 210, 0.08) !important;
+      box-shadow: 0 0 6px rgba(101, 154, 210, 0.2);
+    }
+
+    .tag-python {
+      border-color: #ffd43b !important;
+      color: #ffd43b !important;
+      background: rgba(255, 212, 59, 0.08) !important;
+      box-shadow: 0 0 6px rgba(255, 212, 59, 0.2);
+    }
+
+    .tag-cuda {
+      border-color: #39ff14 !important;
+      color: #39ff14 !important;
+      background: rgba(57, 255, 20, 0.08) !important;
+      box-shadow: 0 0 6px rgba(57, 255, 20, 0.2);
+    }
+
+    .tag-pytorch {
       border-color: #ff6b6b !important;
       color: #ff6b6b !important;
       background: rgba(255, 107, 107, 0.08) !important;
       box-shadow: 0 0 6px rgba(255, 107, 107, 0.2);
     }
-    
-    .tag-ml {
-      border-color: #ff4ecd !important;
-      color: #ff4ecd !important;
-      background: rgba(255, 78, 205, 0.08) !important;
-      box-shadow: 0 0 6px rgba(255, 78, 205, 0.2);
+
+    /* ---------- Web3 ---------- */
+
+    .tag-web3 {
+      border-color: #ff8c42 !important;
+      color: #ff8c42 !important;
+      background: rgba(255, 140, 66, 0.08) !important;
+      box-shadow: 0 0 6px rgba(255, 140, 66, 0.2);
     }
+
+    .tag-blockchain {
+      border-color: #ff8c42 !important;
+      color: #ff8c42 !important;
+      background: rgba(255, 140, 66, 0.08) !important;
+      box-shadow: 0 0 6px rgba(255, 140, 66, 0.2);
+    }
+
+    .tag-ethereum {
+      border-color: #627eea !important;
+      color: #627eea !important;
+      background: rgba(98, 126, 234, 0.08) !important;
+      box-shadow: 0 0 6px rgba(98, 126, 234, 0.2);
+    }
+
+    .tag-smart-contracts {
+      border-color: #ff2a7f !important;
+      color: #ff2a7f !important;
+      background: rgba(255, 42, 127, 0.08) !important;
+      box-shadow: 0 0 6px rgba(255, 42, 127, 0.2);
+    }
+
+    .tag-full-stack {
+      border-color: #00f0ff !important;
+      color: #00f0ff !important;
+      background: rgba(0, 240, 255, 0.08) !important;
+      box-shadow: 0 0 6px rgba(0, 240, 255, 0.2);
+    }
+
 }
 
   .project-action-tray {

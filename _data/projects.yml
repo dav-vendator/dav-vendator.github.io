@@ -2,13 +2,13 @@
   slug: "vlib"
   repo_index: "01"
   tech_label: "C++20"
-  tech_class: "purple"
+  tech_class: "blue"
   progress: 45
   description: "A modern C++ library built from scratch to explore memory management, data structures, linear algebra, and tensor computation."
   repo_url: "https://github.com/dav-vendator/vlib"
   featured: true
   tags:
-   - C++
+   - CPP
    - Numerical Computing
    - Linear Algebra
    - Systems
@@ -18,13 +18,13 @@
   slug: "emulators"
   repo_index: "06"
   tech_label: "Systems"
-  tech_class: "pink"
+  tech_class: "blue"
   progress: 35
   description: "A collection of emulator projects exploring instruction execution, memory models, CPU architecture, and low-level systems design."
   repo_url: "https://github.com/dav-vendator/Emulators"
   featured: true
   tags:
-   - C++
+   - CPP
    - Computer Architecture
    - Emulation
    - Systems
