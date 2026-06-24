@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Typography & Buttons
+   ========================================================================== */
+
+.article-content h3 {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 3.85rem;
+}
+
+.article-content p {
+  margin: 0 0 1.25rem;
+  font-size: 0.76rem;
+  line-height: 1.55;
+  opacity: 0.82;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.article-btn,
+.article-content .btn--primary {
+  margin-top: auto;
+  align-self: flex-start;
+  
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.1rem !important;
+  border-radius: 10px !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+  white-space: nowrap;
+  text-decoration: none !important;
+  
+  background: rgba(255, 42, 127, 0.05) !important;
+  color: #ff2a7f !important;
+  border: 1px solid rgba(255, 42, 127, 0.4) !important;
+  
+  transition: 
+    background 0.3s ease, 
+    color 0.3s ease, 
+    border-color 0.3s ease, 
+    box-shadow 0.3s ease, 
+    transform 0.2s ease !important;
+}
+
+.article-btn:hover,
+.article-content .btn--primary:hover {
+  background: #ff2a7f !important;
+  color: #0b1026 !important;
+  border-color: #ff2a7f !important;
+  transform: translateY(-2px);
+  
+  box-shadow: 
+    0 0 12px rgba(255, 42, 127, 0.4),
+    0 0 32px rgba(255, 42, 127, 0.2) !important;
+}
+
+.article-btn:active,
+.article-content .btn--primary:active {
+  transform: translateY(0);
+}

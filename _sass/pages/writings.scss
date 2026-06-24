@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Writing Page Hero & Stats
+   ========================================================================== */
+
+.writing-hero {
+  padding: 2.2rem;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at top left, rgba(255, 42, 127, 0.22), transparent 34%),
+    linear-gradient(135deg, rgba(255, 42, 127, 0.12), rgba(11, 16, 38, 0.75));
+  border: 1px solid rgba(255, 42, 127, 0.32);
+}
+
+.writing-hero .eyebrow {
+  margin-bottom: 0.7rem;
+  color: #ff7eb6;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.writing-hero h1 {
+  max-width: 850px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.08;
+}
+
+.writing-hero p {
+  max-width: 780px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.88;
+}
+
+.writing-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.writing-stats div {
+  padding: 1rem 1.2rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.writing-stats strong {
+  display: block;
+  color: #ff7eb6;
+  font-size: 1.35rem;
+  margin-bottom: 0.25rem;
+}
+
+.writing-stats span {
+  opacity: 0.75;
+  font-size: 0.9rem;
+}

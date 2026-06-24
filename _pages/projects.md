@@ -9,10 +9,11 @@ pagination: false
 ---
 
 <div class="project-hero">
-  <span class="status-badge"><span class="pulse-dot"></span> Core Repositories</span>
-  <h1>Software Frameworks & Technical Blueprints</h1>
+  <span class="status-badge"><span class="pulse-dot"></span> Research & Development</span>
+  <h1>Research, Engineering & Open Source Projects</h1>
   <p>
-    Open-source toolkits, lightweight libraries, and pipeline implementations exploring natural language parsing, sequence modeling, and engineering optimizations.
+    From quantum machine learning architectures to modern C++ libraries,
+    these projects represent my work at the intersection of research and software engineering.
   </p>
 </div>
 

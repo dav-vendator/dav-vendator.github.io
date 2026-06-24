@@ -1,0 +1,103 @@
+/* ==========================================================================
+   FEATURE ROW GRID FIX (3-COLUMN SNAP) - STRUCTURED ANCHORS
+   ========================================================================== */
+
+.home-features-wrapper {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 1rem 1.5rem 5rem 1.5rem !important; /* Brought layout up tightly under line */
+
+  .feature__row {
+    display: flex !important;
+    flex-flow: row wrap !important;
+    justify-content: space-between !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    clear: both !important;
+    gap: 1.5rem !important;
+    
+    > div, .feature__item {
+      position: relative !important;
+      float: none !important;
+      width: calc(33.333% - 1rem) !important; 
+      margin: 0 !important;
+      padding: 2.2rem 1.8rem 1.8rem 1.8rem !important; 
+      
+      background: rgba(15, 18, 36, 0.7) !important; 
+      border: 1px solid rgba(255, 255, 255, 0.05) !important;
+      border-top: 3px solid rgba(176, 38, 255, 0.4) !important; /* Structural neon top header bar */
+      border-radius: 16px !important;
+      box-sizing: border-box !important;
+      
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+
+      &:hover {
+        transform: translateY(-5px) !important;
+        border-color: rgba(0, 240, 255, 0.25) !important;
+        border-top-color: #00f0ff !important; 
+        box-shadow: 0 0 25px rgba(0, 240, 255, 0.08) !important;
+          
+        .archive__item-title { color: #00f0ff !important; }
+        .btn.cv-btn-secondary {
+          background: #ff2a7f !important;
+          color: #0b1026 !important;
+          border-color: #ff2a7f !important;
+        }
+      }
+
+      .archive__item-title {
+        font-size: 1.3rem !important;
+        margin-top: 0 !important;
+        margin-bottom: 0.75rem !important;
+        color: #ffffff !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.01em !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+        padding-bottom: 0.75rem;
+        width: 100%;
+        transition: color 0.25s ease !important;
+      }
+
+      .archive__item-excerpt {
+        font-size: 0.88rem !important;
+        line-height: 1.6 !important;
+        color: rgba(255, 255, 255, 0.7) !important;
+        margin-top: 0.5rem !important;
+        margin-bottom: 2.5rem !important; 
+        font-weight: 400 !important;
+      }
+
+      .btn.cv-btn-secondary {
+        margin-top: auto !important;
+        width: 100% !important;
+        text-align: center !important;
+        justify-content: center !important;
+        padding: 0.65rem 1rem !important;
+        font-size: 0.75rem !important;
+        background: transparent !important;
+        border: 1px solid rgba(255, 42, 127, 0.4) !important;
+        border-radius: 8px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-features-wrapper .feature__row {
+    gap: 1.25rem !important;
+    > div, .feature__item {
+      width: calc(50% - 0.625rem) !important;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .home-features-wrapper .feature__row {
+    > div, .feature__item {
+      width: 100% !important;
+    }
+  }
+}

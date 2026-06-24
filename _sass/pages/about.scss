@@ -1,0 +1,329 @@
+/* ==========================================================================
+   ABOUT PAGE TERMINAL SYSTEM STYLES
+   ========================================================================== */
+
+.about-hero {
+  padding: 3.5rem 2rem;
+  background: 
+    radial-gradient(circle at bottom right, rgba(176, 38, 255, 0.12), transparent 45%),
+    linear-gradient(145deg, rgba(11, 16, 38, 0.95), rgba(15, 10, 35, 0.8));
+  border: 1px solid rgba(176, 38, 255, 0.25);
+  border-radius: 24px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 40px rgba(176, 38, 255, 0.04);
+
+  h1 {
+    font-size: clamp(2rem, 4.5vw, 3.2rem) !important;
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0.75rem 0 1rem 0;
+    background: linear-gradient(to right, #ffffff, #ff7eb6, #b026ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.88);
+    max-width: 800px;
+    margin: 0;
+  }
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #39ff14;
+  background: rgba(57, 255, 20, 0.08);
+  border: 1px solid rgba(57, 255, 20, 0.25);
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+
+  .pulse-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #39ff14;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #39ff14;
+    animation: neonPulse 2s infinite ease-in-out;
+  }
+}
+
+@keyframes neonPulse {
+  0%, 100% { opacity: 0.4; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.1); box-shadow: 0 0 12px #39ff14; }
+}
+
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.about-statement p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.about-core-metrics {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+
+  .metric-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 0.85rem 1.25rem;
+    border-radius: 12px;
+    
+    .label {
+      display: block;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: rgba(255, 255, 255, 0.4);
+      margin-bottom: 0.15rem;
+    }
+    .value {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+  }
+}
+
+.section-lead {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+}
+
+.research-bento {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 3.5rem;
+
+  .bento-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.25s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      border-color: rgba(0, 240, 255, 0.3);
+      box-shadow: 0 5px 20px rgba(0, 240, 255, 0.03);
+    }
+
+    &.long {
+      grid-column: span 2;
+      background: linear-gradient(95deg, rgba(11, 16, 38, 0.4), rgba(255, 42, 127, 0.03));
+      border-color: rgba(255, 42, 127, 0.15);
+
+      &:hover {
+        border-color: rgba(255, 42, 127, 0.35);
+        box-shadow: 0 5px 20px rgba(255, 42, 127, 0.04);
+      }
+    }
+
+    .bento-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.15rem;
+      color: #ffffff;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      opacity: 0.82;
+    }
+  }
+}
+
+.about-tag-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 3.5rem;
+
+  .pillar-tag {
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.45rem 0.9rem;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    letter-spacing: 0.01em;
+
+    &.pink { border-color: rgba(255, 42, 127, 0.3); color: #ff2a7f; background: rgba(255, 42, 127, 0.03); }
+    &.cyan { border-color: rgba(0, 240, 255, 0.3); color: #00f0ff; background: rgba(0, 240, 255, 0.03); }
+    &.purple { border-color: rgba(176, 38, 255, 0.3); color: #b026ff; background: rgba(176, 38, 255, 0.03); }
+    &.green { border-color: rgba(57, 255, 20, 0.3); color: #39ff14; background: rgba(57, 255, 20, 0.03); }
+    &.muted { opacity: 0.65; }
+  }
+}
+
+.journey-card {
+  background: rgba(255, 255, 255, 0.015);
+  border-left: 2px solid rgba(0, 240, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-right: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 1.5rem;
+  border-radius: 0 16px 16px 0;
+  margin-bottom: 1.25rem;
+
+  .journey-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+
+    .node-icon {
+      font-size: 1.35rem;
+      background: rgba(255, 255, 255, 0.03);
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.15rem;
+      color: #ffffff;
+    }
+
+    .timeline-sub {
+      margin: 0;
+      font-size: 0.78rem;
+      color: #00f0ff;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.85;
+  }
+}
+
+.about-footer-note {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  opacity: 0.65;
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
+@media (max-width: 850px) {
+  .about-intro-grid, .research-bento {
+    grid-template-columns: 1fr;
+  }
+  .research-bento .bento-card.long {
+    grid-column: span 1;
+  }
+}
+
+/* ==========================================================================
+   LANDING PAGE (INDEX SCREEN) DEEP-TECH LAYOUT
+   ========================================================================== */
+
+.page__hero--overlay {
+  background-color: #0b1026 !important;
+  border-bottom: 1px solid rgba(255, 42, 127, 0.2);
+  padding: 5rem 0 !important;
+  
+  .page__lead {
+    font-size: clamp(1.15rem, 2.5vw, 1.45rem) !important;
+    line-height: 1.6;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.btn.home-btn-secondary {
+  display: inline-flex !important;
+  padding: 0.65rem 1.4rem !important;
+  border-radius: 12px !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  background: rgba(255, 42, 127, 0.05) !important;
+  color: #ff2a7f !important;
+  border: 1px solid rgba(255, 42, 127, 0.4) !important;
+  text-decoration: none !important;
+  transition: all 0.25s ease !important;
+  margin-left: 0.5rem;
+
+  &:hover {
+    background: #ff2a7f !important;
+    color: #0b1026 !important;
+    box-shadow: 0 0 15px rgba(255, 42, 127, 0.4) !important;
+    transform: translateY(-2px);
+  }
+}
+
+/* Centralized Introduction Segment Space Optimization */
+.home-intro-wrapper {
+  padding: 1.5rem 1.5rem 0 1.5rem !important; /* Shrunk spacing values */
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto !important;
+  
+  .feature__row, .feature__item {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .archive__item-excerpt {
+    font-size: clamp(1.25rem, 3vw, 1.65rem) !important;
+    line-height: 1.45;
+    font-weight: 600;
+    font-style: normal !important;
+    color: #ffffff !important;
+    background: linear-gradient(120deg, #00f0ff, #b026ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Miniature structured separator line */
+  hr {
+    display: block !important;
+    width: 80px !important;
+    margin: 2rem auto 0 auto !important;
+    border: 0 !important;
+    border-top: 2px solid rgba(255, 42, 127, 0.3) !important; /* Faint neon pink accent bar */
+  }
+}

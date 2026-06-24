@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Article Cards Grid
+   ========================================================================== */
+
+.article-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.article-card {
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 42, 127, 0.45);
+  box-shadow:
+    0 0 28px rgba(255, 42, 127, 0.14),
+    0 0 80px rgba(255, 42, 127, 0.06);
+}
+
+.article-image-wrap {
+  height: 120px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: rgba(255, 42, 127, 0.08);
+}
+
+.article-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-content {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+
+.article-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(255, 42, 127, 0.12);
+  border: 1px solid rgba(255, 42, 127, 0.32);
+  color: #ff7eb6;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}

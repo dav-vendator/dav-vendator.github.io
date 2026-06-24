@@ -1,0 +1,248 @@
+//projects.scss
+/* ==========================================================================
+   PROJECTS SCREEN STRUCTURAL BLUEPRINTS
+   ========================================================================== */
+
+.project-hero {
+  padding: 3.5rem 2rem;
+  background: 
+    radial-gradient(circle at bottom right, rgba(0, 240, 255, 0.12), transparent 45%),
+    linear-gradient(145deg, rgba(11, 16, 38, 0.95), rgba(15, 10, 35, 0.8));
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  border-radius: 24px;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 40px rgba(0, 240, 255, 0.04);
+
+  h1 {
+    font-size: clamp(2rem, 4.5vw, 3.2rem) !important;
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0.75rem 0 1rem 0;
+    background: linear-gradient(to right, #ffffff, #00f0ff, #b026ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.88);
+    max-width: 800px;
+    margin: 0;
+  }
+}
+
+/* Master Grid Deployment */
+.project-matrix {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.project-card {
+  position: relative !important;
+  padding: 2.2rem 1.8rem !important;
+  background: rgba(15, 18, 36, 0.7) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 20px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+
+  /* Featured Repos Get an Explicit Border Identity Accent */
+  &.featured {
+    border-top: 3px solid #b026ff !important;
+  }
+  &:not(.featured) {
+    border-top: 3px solid rgba(0, 240, 255, 0.4) !important;
+  }
+
+  &:hover {
+    transform: translateY(-5px) !important;
+    border-color: rgba(0, 240, 255, 0.35) !important;
+    border-top-color: #00f0ff !important;
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.07) !important;
+
+    h3 { color: #00f0ff !important; }
+    .repo-meta { color: #00f0ff !important; opacity: 0.8; }
+    .project-link-btn {
+      background: #ff2a7f !important;
+      border-color: #ff2a7f !important;
+      color: #0b1026 !important;
+    }
+  }
+
+  .project-header-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+
+  /* Inner Tech Tracking Badges */
+  .tech-pill {
+    font-family: monospace;
+    font-size: 0.68rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.2rem 0.55rem;
+    border-radius: 6px;
+    
+    &.purple { background: rgba(176, 38, 255, 0.12); color: #b026ff; border: 1px solid rgba(176, 38, 255, 0.25); }
+    &.cyan { background: rgba(0, 240, 255, 0.12); color: #00f0ff; border: 1px solid rgba(0, 240, 255, 0.25); }
+    &.pink { background: rgba(255, 42, 127, 0.12); color: #ff2a7f; border: 1px solid rgba(255, 42, 127, 0.25); }
+  }
+
+  .repo-meta {
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 700;
+    transition: color 0.25s ease;
+  }
+
+  h3 {
+    font-size: 1.25rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.85rem !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em !important;
+    width: 100%;
+    transition: color 0.25s ease !important;
+  }
+
+  .project-description {
+    font-size: 0.88rem !important;
+    line-height: 1.65 !important;
+    color: rgba(255, 255, 255, 0.72) !important;
+    margin-bottom: 1.75rem !important;
+    font-weight: 400 !important;
+  }
+
+  /* Meta Tag Row Inside Card Frame */
+  /* Meta Tag Row Inside Card Frame */
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 2rem;
+
+    /* Base structure for all tags */
+    span {
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+      
+    /* Specific Modifier Classes (Moved out of parent span block) */
+    .tag-c {
+      border-color: #659ad2 !important;
+      color: #659ad2 !important;
+      background: rgba(101, 154, 210, 0.08) !important;
+      box-shadow: 0 0 6px rgba(101, 154, 210, 0.2);
+    }
+    
+    .tag-python {
+      border-color: #ffd43b !important;
+      color: #ffd43b !important;
+      background: rgba(255, 212, 59, 0.08) !important;
+      box-shadow: 0 0 6px rgba(255, 212, 59, 0.2);
+    }
+    
+    .tag-cuda {
+      border-color: #76b900 !important;
+      color: #76b900 !important;
+      background: rgba(118, 185, 0, 0.08) !important;
+      box-shadow: 0 0 6px rgba(118, 185, 0, 0.2);
+    }
+    
+    .tag-pytorch {
+      border-color: #ee4c2c !important;
+      color: #ee4c2c !important;
+      background: rgba(238, 76, 44, 0.08) !important;
+      box-shadow: 0 0 6px rgba(238, 76, 44, 0.2);
+    }
+    
+    .tag-qiskit {
+      border-color: #6929c4 !important;
+      color: #6929c4 !important;
+      background: rgba(105, 41, 196, 0.08) !important;
+      box-shadow: 0 0 6px rgba(105, 41, 196, 0.2);
+    }
+    
+    .tag-tensor {
+      border-color: #00d4aa !important;
+      color: #00d4aa !important;
+      background: rgba(0, 212, 170, 0.08) !important;
+      box-shadow: 0 0 6px rgba(0, 212, 170, 0.2);
+    }
+    
+    .tag-linear-algebra {
+      border-color: #ff8c42 !important;
+      color: #ff8c42 !important;
+      background: rgba(255, 140, 66, 0.08) !important;
+      box-shadow: 0 0 6px rgba(255, 140, 66, 0.2);
+    }
+    
+    .tag-hpc {
+      border-color: #00f0ff !important;
+      color: #00f0ff !important;
+      background: rgba(0, 240, 255, 0.08) !important;
+      box-shadow: 0 0 6px rgba(0, 240, 255, 0.2);
+    }
+    
+    .tag-systems {
+      border-color: #ff6b6b !important;
+      color: #ff6b6b !important;
+      background: rgba(255, 107, 107, 0.08) !important;
+      box-shadow: 0 0 6px rgba(255, 107, 107, 0.2);
+    }
+    
+    .tag-ml {
+      border-color: #ff4ecd !important;
+      color: #ff4ecd !important;
+      background: rgba(255, 78, 205, 0.08) !important;
+      box-shadow: 0 0 6px rgba(255, 78, 205, 0.2);
+    }
+  }
+
+  .project-action-tray {
+    width: 100%;
+    margin-top: auto;
+  }
+
+  .project-link-btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+    padding: 0.65rem 1rem !important;
+    font-size: 0.75rem !important;
+    background: transparent !important;
+    border: 1px solid rgba(255, 42, 127, 0.4) !important;
+    border-radius: 10px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    transition: all 0.25s ease !important;
+  }
+}
+
+/* Responsiveness adjustments */
+@media (max-width: 900px) {
+  .project-matrix {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}

@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Article Tags (Chips)
+   ========================================================================== */
+
+.article-tags {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.85rem;
+}
+
+.article-tag {
+  display: inline-flex !important;
+  align-items: center;
+  width: auto !important;
+  max-width: fit-content;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.055) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  color: rgba(255, 255, 255, 0.82) !important;
+  font-size: 0.58rem !important;
+  font-weight: 700 !important;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  
+  &.tag-editors-pick {
+    border-color: #ff007f !important;
+    color: #ff007f !important;
+    background: rgba(255, 0, 127, 0.08) !important;
+    box-shadow: 0 0 6px rgba(255, 0, 127, 0.2);
+  }
+
+  &.tag-paid {
+    border-color: #00f0ff !important;
+    color: #00f0ff !important;
+    background: rgba(0, 240, 255, 0.08) !important;
+    box-shadow: 0 0 6px rgba(0, 240, 255, 0.2);
+  }
+
+  &.tag-qml {
+    border-color: #b026ff !important;
+    color: #b026ff !important;
+    background: rgba(176, 38, 255, 0.08) !important;
+    box-shadow: 0 0 6px rgba(176, 38, 255, 0.2);
+  }
+
+  &.tag-qc {
+    border-color: #39ff14 !important;
+    color: #39ff14 !important;
+    background: rgba(57, 255, 20, 0.08) !important;
+    box-shadow: 0 0 6px rgba(57, 255, 20, 0.2);
+  }
+
+  &.tag-qec {
+    border-color: #ffb000 !important;
+    color: #ffb000 !important;
+    background: rgba(255, 176, 0, 0.08) !important;
+    box-shadow: 0 0 6px rgba(255, 176, 0, 0.2);
+  }
+
+}
