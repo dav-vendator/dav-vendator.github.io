@@ -2,31 +2,32 @@
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.03);
-  padding: 1rem;
-  border-radius: 10px;
+  padding: 1.2rem; /* Uniform box interior padding */
+  border-radius: 12px;
   margin-bottom: 1.5rem;
 
   .todo-title {
     font-family: monospace;
     font-size: 0.72rem;
-    color: #ff2a7f; /* Neon Pink heading */
+    color: #ff2a7f; /* Neon Pink */
     font-weight: 700;
     letter-spacing: 0.05em;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
   }
 
   .todo-list {
     list-style: none;
-    padding: 0;
+    padding-left: 0 !important; /* Forces default browser offset to zero */
     margin: 0;
 
     li {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.65rem; /* Space between checkbox and text */
       font-size: 0.78rem;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.5rem;
       line-height: 1.4;
+      padding-left: 0.1rem; /* Tiny nudge to match the position of the "//" symbols */
 
       &:last-child { margin-bottom: 0; }
 
@@ -40,19 +41,19 @@
       }
 
       &.completed {
-        color: rgba(255, 255, 255, 0.4);
-        // text-decoration: line-through;
+        color: rgba(255, 255, 255, 0.35);
+        text-decoration: line-through;
         .todo-checkbox {
-          background: #39ff14; /* Neon Green check */
-          box-shadow: 0 0 6px #39ff14;
+          background: #39ff14; /* Glowing Neon Green */
+          box-shadow: 0 0 8px #39ff14;
           border: none;
         }
       }
 
       &.pending {
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 0.75);
         .todo-checkbox {
-          border: 1px solid rgba(255, 255, 255, 0.3);
+          border: 1px solid rgba(255, 255, 255, 0.25);
           background: transparent;
         }
       }
