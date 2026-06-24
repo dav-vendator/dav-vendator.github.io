@@ -42,7 +42,6 @@
 
       &.completed {
         color: rgba(255, 255, 255, 0.35);
-        text-decoration: line-through;
         .todo-checkbox {
           background: #39ff14; /* Glowing Neon Green */
           box-shadow: 0 0 8px #39ff14;
