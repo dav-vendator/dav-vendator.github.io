@@ -138,7 +138,7 @@ toc: false
           <span class="todo-checkbox"></span>
           <span class="todo-task">Matrix class and operations</span>
         </li>
-        <li class="pending">
+        <li class="completed">
           <span class="todo-checkbox"></span>
           <span class="todo-task">Tensor container implementation</span>
         </li>
