@@ -2,20 +2,19 @@
 - title: "Beyond Classical: A Quantum Approach to Time-Series Prediction"
   platform: "TDS"
   url: "https://towardsdatascience.com/beyond-classical-a-quantum-approach-to-time-series-prediction/"
-  date: "November 2026"
+  date: "November 4 2026"
   type: "Article"
   image: "https://assets.insightmediagroup.io/media/1793353145033_qiix6h.webp"
   description: "An exploration of quantum approaches to time-series prediction, introducing CoQLSTM, a coherent quantum recurrent architecture designed to preserve quantum information across timesteps. Covers its motivation, architecture, experimental results, limitations, and future research directions."
   tags:
     - QML
     - CoQLSTM
-    - Time-Series
     - "Editor's Pick"
 
 - title: "How to Keep Quantum Information Alive for Machine Learning"
   platform: "TDS"
   url: "https://towardsdatascience.com/how-to-keep-quantum-information-alive-for-machine-learning/"
-  date: "June 2026"
+  date: "June 3 2026"
   type: "Article"
   image: "https://towardsdatascience.com/wp-content/uploads/2026/06/qerror-scaled-1.jpg"
   description: "An introduction to Quantum Error Correction and the challenges of protecting quantum information from noise and decoherence in machine learning systems."
